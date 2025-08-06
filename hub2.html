@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Home</title>
+    <link rel="stylesheet" href="hub2.css">
+    <link rel="stylesheet" href="Product.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="hub2.html">
+    <link rel="stylesheet" href="contact.html">
+   
+</head>
+<body> 
+
+    <script>
+
+ 
+   
+    window.onload = function() {
+      let allowed = false;
+
+      
+      for (let i = 0; i < 3; i++) {
+        let age = prompt("Enter Your Age (18+ Complasary)");
+
+        if (age === null) {
+          alert("You cancelled. The site is being shut down.");
+          break;
+        }
+
+        age = parseInt(age);
+
+        if (!isNaN(age) && age >= 18) {
+          allowed = true;
+          alert("Welcome! You can access the site.");
+          break;
+        } else {
+          alert("Sorry, this site is only for 18+ users.");
+        }
+      }
+
+      if (!allowed) {
+        document.body.innerHTML = "<h2 style='color:red;text-align:center;'>Access Denied. 18+ Only.</h2>";
+      }
+    }
+
+       
+
+    </script>
+     
+
+
+    <header>
+        <div class="container head-container">
+            <div class="logo">| Superview Electronic</div>
+            <nav>
+                <ul>
+                    <li><a href="hub2.html" class="active">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+   
+
+    <section class="hero">
+        <div class="container body-container">
+            <div class="hero-text">
+              <h1>LED Television</h1>
+                <h1>Top LED TV Brands </h1>
+                <p> Buy Telivision Online @upto 25% Off On Superview Electronic Prime Day Sale</p>
+                <a href="Product.html"  class="btn">Buy Now</a>
+            </div>
+            <div class="Hero-image">
+                <img src="hub-img/lcd3.jpeg" alt="screen">
+            </div>
+        </div>
+    </section>
+    <section class="featured-products">
+        <div class="container">
+            <h2> Types Of LED</h2>
+            <div class="Products-row">
+                <div class="Products-card">
+                    <img src="hub-img/samsung.lcd.jpeg" alt="LCD=2">
+                    <h3>Samsung 80cm 30 Inch Display</h3>
+                    <p>Rs/11,990</p>
+                </div>
+                <div class="Products-card">
+                    <img src="hub-img/redmi2.jpeg" alt="LCD-3">
+                    <h3>Redmi Xiaomi 80cm 32 Inch</h3>
+                    <p>Rs/10,499</p>
+                </div>
+                <div class="Products-card">
+                    <img src="hub-img/acer.jpeg" alt="LCD-1">
+                    <h3>Acer 126cm 50 Inch Pro Series</h3>
+                    <p>Rs/26,999</p>
+                </div>
+                  <div class="Products-card">
+                    <img src="hub-img/sony.jpeg" alt="LCD-1">
+                    <h3>sony bravia 80cm 32 inch </h3>
+                    <p>Rs/35,483</p>
+                </div>
+            </div>
+        </div>
+</section>
+    <Footer>
+        <DIV class="container footer-container">
+            <p>&copy; 2025 Superview Electronic All Rights Reserved</p>
+        </DIV>
+    </Footer>
+</body>
+</html>
